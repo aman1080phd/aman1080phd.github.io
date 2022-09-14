@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: #00308F;
+    box-shadow: 0 0 10px white;
+}
+
+
+/* Home section*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: url("image.jpg") no-repeat center center/cover; */
+    background-color: #0764f0;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn{
+    padding: 10px 53px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5x white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Project section*/
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    /* border: 1px solid black; */
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+.box img{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+
+}
+
+/*Skills Section*/
+
+
+.info img{
+    width: 80px;
+    height: 85px;
+    padding: 5px;
+}
+
+#aman{
+    width: 150px;
+    height: 80px;
+    /* padding: 5px; */
+}
+
+.container div{
+    border: 1px #ccc solid;
+
+    padding: 10px;
+}
+.container{
+    display: flex;
+}
+
+
+
+/*Education section*/
+
+.heading{
+
+    font-family: century;
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 40px 0px;
+
+}
+
+.text p{
+    font-size: 24px;
+    font-family: century;
+    font-weight: bold;
+}
+
+
+/*contact section*/
+
+#contact{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+   
+    
+    
+    
+}
+
+
+.contactbox{
+    /* border: 1px solid black; */
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.contactbox img{
+    width: 50px;
+    height: 50px;
+}
+
+#contact2{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   
+}
+.small{
+    width: 30px;
+    height: 30px;
+   
+}
+
+.contactbox2{
+    /* border: 1px solid black; */
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactbox2 div{
+    text-align: center;
+}
+
