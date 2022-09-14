@@ -1,0 +1,39 @@
+/* Home */
+
+#home{
+    height: 820px;
+
+}
+
+#home .home-content .text-1{
+    font-size: 30px;
+    text-align: center;
+}
+#home .home-content .text-2{
+    font-size: 30px;
+    text-align: center;
+}
+#home .home-content .text-3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.headings{
+    font-size: 1.7rem;
+}
+
+/* About */
+
+
+
+
+#intro{
+   
+    text-align: justify;
+    font-size: 15px;
+    font-family: century;
+
+    margin-top: 20px;
+    padding: 10px;
+}
+

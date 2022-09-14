@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Navbar */
 .navbar{
     display: flex;
@@ -49,13 +53,33 @@
     color: white;
 }
 
+#home .home-content .text-1{
+    font-size: 27px;
+
+}
+#home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+
+}
+#home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+#home .home-content .text-3 span{
+    color: aqua;
+    font-weight: 500;
+}
+
+
 #home::before{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    /* background: url("image.jpg") no-repeat center center/cover; */
-    background-color: #0764f0;
+    background: url("./images/bgimage.jpg") no-repeat center center/cover;
+    /* background-color: #0764f0; */
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -95,6 +119,8 @@
     font-weight: bold;
 }
 
+/* About Section */
+
 #about{
     display: flex;
     flex-direction: column;
@@ -104,17 +130,24 @@
 }
 #pic{
     display: flex;
+    
+    width: 80%;
+    margin: auto;
 }
 
 #pic img{
     width: 575px;
     height: 400px;
+    
 }
 #intro{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
+    padding: 50px;
+    font-size: 18px;
+    font-family: century;
+    
 }
 
 #intro h2{
@@ -140,7 +173,7 @@
     flex-direction: column;
     width: 350px;
     height: 450px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 10px;
     align-items: center;
     text-align: center;
@@ -213,7 +246,7 @@
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 50px;
    
     
     
@@ -228,8 +261,8 @@
     justify-content: space-around;
 }
 .contactbox img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 #contact2{
@@ -256,3 +289,11 @@
     text-align: center;
 }
 
+
+.footer{
+    
+    height: 30px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 18px;
+}

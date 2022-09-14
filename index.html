@@ -7,53 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
 </head>
 
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
 
     <section id="home">
-        <div class="main">
-            <h1 class="headings">I AM <br>AMAN KUMAR</h1>
-            <button class="btn">
-                Resume
-            </button>
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Aman Kumar</div>
+                <div class="text-3">And I'm a <span>Backend Developer</span></div>
+
+            </div>
         </div>
 
-
+        <button class="btn">
+            Resume
+        </button>
     </section>
 
+    <!--About-->
     <section id="about">
         <h1 class="headings">ABOUT ME</h1>
         <div id="pic">
-            <img src="Profile Picture.jpg" alt="">
+            <img src="./Profile Picture.jpg" alt="">
             <div id="intro">
                 <h2>AMAN KUMAR</h2>
-                <p>
-                    Aspiring Java Backend developer skilled in Springboot &
+                <P>Aspiring Java Backend developer skilled in Springboot &
                     Hibernate frameworks with a good grasp of core Java
                     concepts. Self-motivated with a strong problem-solving
 
                     mindset and curious learner. Keen interest in user-
                     centric products. Looking forward to working in a
 
-                    challenging role with a growth-oriented organization.
-                </p>
+                    challenging role with a growth-oriented organization.</P>
             </div>
+
         </div>
     </section>
 
     <!--Projects-->
+
     <section id="services">
         <h1 class="headings">PROJECTS</h1>
         <div class="row">
@@ -157,6 +164,7 @@
     </section>
 
     <!--Education-->
+    <div id="education"></div>
     <section id="services">
         <h1 class="headings">EDUCATION</h1>
         <div class="row">
@@ -188,15 +196,7 @@
 
     <section id="cont">
         <h1 class="headings">CONTACT</h1>
-        <div id="contact">
-            <div class="contactbox">
 
-                <img src="./images/contact/github-logo.png" alt="">
-                <img src="./images/contact/linkedin.png" alt="">
-                <img src="./images/contact/email.png" alt="">
-
-            </div>
-        </div>
 
         <div id="contact2">
             <div class="contactbox2">
@@ -215,7 +215,25 @@
             </div>
 
         </div>
+
+
+
+        <div id="contact">
+            <div class="contactbox">
+
+                <img src="./images/contact/github-logo.png" alt="">
+                <img src="./images/contact/linkedin.png" alt="">
+                <img src="./images/contact/email.png" alt="">
+
+            </div>
+        </div>
+
+
     </section>
+
+    <footer class="footer">
+        <p>Made with 💖 by AMAN KUMAR</p>
+    </footer>
 </body>
 
 </html>
