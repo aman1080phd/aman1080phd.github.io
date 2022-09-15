@@ -151,6 +151,14 @@ html {
 
 /* Project section*/
 
+.box .head{
+  
+  margin: 0px;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  
+}
+
 #services {
   display: flex;
   flex-direction: column;
@@ -194,15 +202,17 @@ html {
   width: 60%;
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  margin-top: 10px;
  
 }
 
 .box p{
-  font-size: 20px;
+  font-size: 16px;
   font-family: century;
   font-weight: bold;
 }
+
+
 
 
 .skills {
@@ -450,4 +460,13 @@ html {
   .skills .skills-content .left .text {
     font-size: 19px;
   }
+}
+
+
+.box .hero{
+  width: 95%;
+  height: 65%;
+  margin: 0px;
+  
+  padding: 15px;
 }
