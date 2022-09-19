@@ -56,7 +56,7 @@ html {
   font-size: 27px;
 }
 #home .home-content .text-2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   margin-left: -3px;
 
@@ -233,7 +233,8 @@ html {
 
 
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  width: calc(60%);
+ 
 }
 .skills .skills-content .left .text {
   font-size: 20px;
@@ -484,3 +485,4 @@ html {
 #mygit .calendar{
   font-family: sans-serif;
 }
+
