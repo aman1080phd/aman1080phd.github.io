@@ -52,18 +52,32 @@ html {
   color: white;
 }
 
+#home .home-content{
+
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  
+}
+
 #home .home-content .text-1 {
   font-size: 27px;
+  
 }
 #home .home-content .text-2 {
   font-size: 40px;
   font-weight: 600;
-  margin-left: -3px;
-
+  
+  
+  
 }
 #home .home-content .text-3 {
   font-size: 30px;
-  margin: 5px 0;
+  
+  
+  
 }
 #home .home-content .text-3 span {
   color: aqua;
@@ -130,6 +144,7 @@ html {
 
   width: 80%;
   margin: auto;
+  
 }
 
 #pic img {

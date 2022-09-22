@@ -6,31 +6,28 @@
 }
 
 .home-content{
-    /* border: 1px solid black; */
+ 
     
         
 }
 
 #home .home-content .text-1{
-    /* border: 1px solid black; */
+ 
     font-size: 25px;
     width: 250px;
-    margin-left: -80px;
-    /* text-align: center; */
+
 }
 #home .home-content .text-2{
-    /* border: 1px solid black; */
+ 
     font-size: 25px;
     width: 250px;
-    margin-left: -80px;
-    /* text-align: center; */
+ 
 }
 #home .home-content .text-3{
     font-size: 25px;
-    /* border: 1px solid black; */
+ 
     width: 250px;
-    margin-left: -80px;
-    /* text-align: center; */
+ 
 }
 
 
@@ -56,4 +53,6 @@
   
     padding: 10px;
 }
+
+
 
