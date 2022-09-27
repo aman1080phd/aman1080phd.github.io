@@ -67,6 +67,7 @@ a{
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  font-size: 18px;
 }
 
 .nav-branding{
@@ -115,7 +116,7 @@ a{
     position: absolute;
     left: -100%;
     top: 70px;
-    gap: 10px;
+    gap: 20px;
     flex-direction: column;
     background-color: black;
     width: 100%;
