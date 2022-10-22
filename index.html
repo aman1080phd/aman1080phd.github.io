@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="circle.css">
     <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css" />
@@ -17,39 +22,36 @@
 
 <body>
 
-    <header>
-        <nav class="navbar">
+    <!-- Navbar-->
 
-            <a href="#" class="nav-branding">AK</a>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#">AK</a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a
+                        href="https://drive.google.com/file/d/1I2AFbGQqeEJz6DzNLyD1_YdC-jKAC0aj/view?usp=sharing">Resume</a>
+                </li>
 
-            <ul class="nav-menu active">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
             </ul>
-
-
-            <div class="hamburger active">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
+        </div>
 
-        </nav>
+    </nav>
 
-    </header>
+
+
+
+
 
     <section id="home">
         <div class="max-width">
@@ -92,10 +94,19 @@
 
                 <img src="./images/hero/deccan.jpg" class="hero" alt="">
 
-                <h1 class="headings head">Deccan Chronicle</h1>
+                <h1 class="headingshead">Deccan Chronicle</h1>
                 <p>
                     Clone of daily newspaper website deccanchronicle.com
                 </p>
+                <div class="tech">
+
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                        alt="">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                        alt="">
+                </div>
                 <div id="image">
                     <a href="https://github.com/aman1080phd/Deccan-Chronicle">
                         <img src="./images/contact/github-logo.png" alt="" />
@@ -109,11 +120,20 @@
 
                 <img src="./images/hero/youtube.jpeg" class="hero" alt="">
 
-                <h1 class="headings head">Mini YouTube App</h1>
+                <h1 class="headingshead">Mini YouTube App</h1>
                 <p>
                     An online video sharing and social media platform that makes it
                     easy to watch online videos
                 </p>
+                <div class="tech">
+
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                        alt="">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                        alt="">
+                </div>
                 <div id="image">
                     <a href="https://github.com/aman1080phd/Mini-YouTube">
                         <img src="./images/contact/github-logo.png" alt="" />
@@ -128,10 +148,19 @@
 
                 <img src="./images/hero/hotstar.jpg" class="hero" alt="">
 
-                <h1 class="headings head">Movie Search App</h1>
+                <h1 class="headingshead">Movie Search App</h1>
                 <p>
                     Get details of hollywood movies in just one click
                 </p>
+                <div class="tech">
+
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                        alt="">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                        alt="">
+                </div>
                 <div id="image">
 
                     <a
@@ -360,7 +389,34 @@
         <p>Made with ❤️ by AMAN KUMAR</p>
     </footer>
 
-    <script src="script.js"></script>
+
+    <script>
+
+
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+
+        menuBtn.onclick = () => {
+            menu.classList.add("acitve");
+            menuBtn.classList.add("hide");
+
+        }
+
+        cancelBtn.onclick = () => {
+            menu.classList.remove("acitve");
+            menuBtn.classList.remove("hide");
+
+        }
+
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+
+    </script>
+
+
 </body>
 
 </html>
